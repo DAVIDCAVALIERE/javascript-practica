@@ -95,9 +95,8 @@ counter()
 // Recursividad
 
 function factorial(n) {
-    if (n <= 1) {
-        return 1
-    }
+    if (n < 0) return undefined;
+    if (n === 0 || n === 1) return 1;
     return n * factorial(n - 1)
 }
 
@@ -131,7 +130,7 @@ const sumAB = currySum(1)(2)
 const sumC = sumAB(3)
 console.log(sumC(3))
 console.log(sumC(4))
-console.log(sumAB(5)(7))
+console.log(sumAB(5))
 
 // Callbacks
 
