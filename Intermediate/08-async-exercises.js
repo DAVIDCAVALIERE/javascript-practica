@@ -92,7 +92,7 @@ function secondTask() {
     setTimeout(() => {
       console.log("Segunda promesa completada");
       resolve();
-    }, 1000);
+    }, 2000);
   });
 }
 
@@ -101,7 +101,7 @@ function thirdTask() {
     setTimeout(() => {
       console.log("Tercera promesa completada");
       resolve();
-    }, 1000);
+    }, 1500);
   });
 }
 
@@ -151,7 +151,7 @@ obtenerUsuario(5); // Error al obtener el usuario: Usuario no encontrado
 // 7. Intenta predecir el resultado de este código antes de ejecutarlo en la consola:
 console.log("Inicio"); // 1
 setTimeout(() => console.log("setTimeout ejecutado")); // 4
-Promise.resolve().then(() => console.log("Promesa resuelta")); // 5
+Promise.resolve().then(() => console.log("Promesa resuelta")); // 3
 console.log("Fin"); // 2
 
 // 8. Crea tres funciones que devuelvan promesas con tiempos de espera distintos.
