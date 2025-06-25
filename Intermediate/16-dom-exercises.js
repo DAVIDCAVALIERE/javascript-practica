@@ -12,8 +12,14 @@ const imagen = document.querySelector("#myImage")
 imagen.setAttribute("src", "../Images/header.jpg")
 
 // 3. Crea un <div id="box"> sin clases y agrega la clase resaltado cuando se cargue la página
+document.addEventListener("DOMContentLoaded", function() {
+    const box = document.querySelector("#box");
+    box.classList.add("resaltado");
+    box.textContent = "Este es un div resaltado";
+});
 
 // 4. Crea un párrafo con id="paragraph" y cambia su color de texto a azul
+
 
 // 5. Agrega un botón que, al hacer clic, cree un nuevo elemento <li> con el texto "Nuevo elemento y lo agregue a una lista <ul id="list">
 
